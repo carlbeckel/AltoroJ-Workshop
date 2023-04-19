@@ -340,6 +340,7 @@ public class ServletUtil {
 		    Cookie accountCookie = new Cookie(ServletUtil.ALTORO_COOKIE, accountStringList);
 			session.setAttribute(ServletUtil.SESSION_ATTR_USER, user);
 		    accountCookie.setSecure(false);
+			
 		    return accountCookie;
 		}
 		catch(SQLException e){
